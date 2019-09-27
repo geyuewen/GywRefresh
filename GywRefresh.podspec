@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GywRefresh'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = '刷新控件'
 
   s.description      = '不需要太多解释'
