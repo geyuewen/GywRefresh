@@ -24,7 +24,7 @@
         NSBundle * bundle = [NSBundle bundleForClass:[self class]];
         NSString * carPDimgpath = [bundle pathForResource:@"carPD.png" ofType:nil inDirectory:@"GywRefresh.bundle"];
         UIImage * carPDimg = [UIImage imageWithContentsOfFile:carPDimgpath];
-        NSString * tyrePDimgpath = [bundle pathForResource:@"tyrePD" ofType:nil inDirectory:@"GywRefresh.bundle"];
+        NSString * tyrePDimgpath = [bundle pathForResource:@"tyrePD.png" ofType:nil inDirectory:@"GywRefresh.bundle"];
         UIImage * tyrePDimg = [UIImage imageWithContentsOfFile:tyrePDimgpath];
         
         UIImageView *OTOC = [[UIImageView alloc]initWithImage:carPDimg];
@@ -111,6 +111,7 @@
 
     for (CALayer *layer in self.OTOCView.layer.sublayers) {
         [layer addAnimation:rotation forKey:@"rotation"];
+        NSlog(@"执行一次");
     }
 }
 
