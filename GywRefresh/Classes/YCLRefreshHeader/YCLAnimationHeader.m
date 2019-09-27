@@ -111,7 +111,7 @@
 
     for (CALayer *layer in self.OTOCView.layer.sublayers) {
         [layer addAnimation:rotation forKey:@"rotation"];
-        NSlog(@"执行一次");
+        NSLog(@"执行了");
     }
 }
 
